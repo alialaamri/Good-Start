@@ -1,0 +1,156 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500;600;700;800&display=swap');
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  list-style: none;
+  font-family: 'rubik', sans-serif;
+}
+
+:root {
+  --main-color: rgb(59, 229, 235);
+  --dark-color: #222222;
+  --parg-color: #857070;
+  --dark-color: #76797a;
+  --border-color: #0805052a;
+  --name-item: #0066c0;
+}
+
+body {
+  background: #f5f6f9;
+  /* margin-top: 180px; */
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  color: var(--dark-color);
+}
+
+p {
+  color: var(--parg-color);
+}
+.container {
+  width: 75%;
+  margin: auto;
+}
+@media (max-width: 1500px) {
+  .container {
+    width: 90%;
+  }
+}
+
+header{
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  background: #fff;
+  z-index: 1000;
+}
+
+header .top_nav{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 0;
+}
+
+header .top_nav .logo img{
+width: 150px;
+}
+header .top_nav .search{
+  width: 500px;
+  border: 2px solid var(--main-color);
+  border-radius: 5px;
+  overflow: hidden;
+  position: relative;
+
+}
+header .top_nav .search input{
+  padding: 18px 175px 18px 20px;
+  outline: none;
+  border: none;
+  width: 100%;
+}
+
+header .top_nav .search button{
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 170px;
+  outline: none;
+  height: 100%;
+  border: none;
+  background-color: var(--main-color);
+  cursor: pointer;
+  color: var(--dark-color);
+  font-size: 18px;
+
+}
+header .top_nav .cart_header{
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+header .top_nav .cart_header i{
+  color: var(--dark-color);
+  font-size: 20px;
+  width: 50px;
+  height: 50px;
+  border: 1px solid var(--dark-color);
+  border-radius: 50px;
+  text-align: center;
+  line-height: 50px;
+  cursor: pointer;
+  transition: 0.3s ease;
+
+}
+
+header .top_nav .cart_header i:hover{
+  background-color: var(--main-color);
+  color: #fff;
+}
+
+header .top_nav .cart_header .icon_cart{
+  position: relative;
+}
+header .top_nav .cart_header .count_item{
+  position: absolute;
+  background: var(--main-color);
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  text-align: center;
+  top: -5px;
+  line-height: 20px;
+  font-size: 13px;
+  right: 0;
+  color: var(--border-color);
+}
+header .top_nav .cart_header .totail_price p{
+  margin-bottom: 8px;
+}
+
+header nav{
+  border-top: 1px solid var(--border-color);
+}
+header .links{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+header .links ul{
+  display: flex;
+  gap: 70px;
+}
+header .links ul li a{
+  color: var(--dark-color);
+  text-transform: uppercase;
+  font-weight: 500;
+  font-size: 15px;
+}
